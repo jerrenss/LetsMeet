@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbackground"
+    tools:context=".GroupCreation">
+
+    <ListView
+        android:id="@+id/lvGroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/etAddMembers"
+        android:divider="#010b13"
+        android:dividerHeight="1dp" />
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:id="@+id/etAddMembers"
+        android:hint="Members"
+        android:textColor="#010b13"
+        android:layout_above="@id/etCreateGroup"
+
+ />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_design_1"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:text="Add"
+        android:id="@+id/bAddMembers"
+        android:layout_toRightOf="@id/etAddMembers"
+        android:layout_above="@id/bCreateGroup"
+        />
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:id="@+id/etCreateGroup"
+        android:layout_marginTop="8dp"
+        android:hint="New Group"
+        android:textColor="#010b13"
+        android:layout_above="@id/bBackToMenu"
+  />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_design_1"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:text="Create"
+        android:layout_marginTop="8dp"
+        android:id="@+id/bCreateGroup"
+        android:layout_toRightOf="@id/etCreateGroup"
+        android:layout_above="@id/bBackToMenu"
+        />
+
+    <Button
+        android:id="@+id/bBackToMenu"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:text="Back To Main Menu"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:background="@drawable/button_design_1"
+        android:fontFamily="@font/alegreya_sc_black"
+        />
+
+</RelativeLayout>

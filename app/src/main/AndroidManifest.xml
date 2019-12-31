@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.letsmeet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CLDatabase"></activity>
+        <activity android:name=".EnterDetail" />
+        <activity android:name=".CirclesHack" />
+        <activity android:name=".ScheduleSync" />
+        <activity android:name=".DeleteSchedule" />
+        <activity android:name=".ViewSchedule" />
+        <activity android:name=".AddSchedule" />
+        <activity android:name=".MySchedule" />
+        <activity android:name=".OrganisingOptions" />
+        <activity
+            android:name=".GroupCreation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".DeleteAgenda" />
+        <activity android:name=".AddAgenda" />
+        <activity android:name=".AgendaOptions" />
+        <activity android:name=".Agenda2" />
+        <activity android:name=".DiscussionActivity" />
+        <activity android:name=".Results" />
+        <activity android:name=".Deconflictor" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

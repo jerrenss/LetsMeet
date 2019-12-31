@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbackground"
+    tools:context=".AddSchedule">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="Date: "
+        android:textColor="#010b13"
+        android:textSize="22sp"
+        app:fontFamily="@font/alegreya_sc_black" />
+
+    <EditText
+        android:id="@+id/etScheduleDate"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tvDate"
+        android:textColor="#010b13"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:hint="dd-mm-yyyy"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvTimings"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvEgDateHyphen"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_vertical"
+        android:text="Timings: "
+        android:textColor="#010b13"
+        android:textSize="22sp"
+        app:fontFamily="@font/alegreya_sc_black" />
+
+    <EditText
+        android:id="@+id/etTimings"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="35dp"
+        android:textColor="#010b13"
+        android:ems="10"
+        android:hint="hh-hh"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@id/tvTimings"
+        android:layout_below="@id/tvEgDateHyphen"
+        android:paddingTop="20dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/etReason"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:textColor="#010b13"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Enter Reason"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvEgTime"
+        android:layout_toRightOf="@id/tvReason"/>
+
+    <TextView
+        android:id="@+id/tvReason"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvEgTime"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:text="Reason: "
+        android:layout_marginTop="10dp"
+        android:textColor="#010b13"
+        android:textSize="22sp"
+        app:fontFamily="@font/alegreya_sc_black" />
+
+    <Button
+        android:id="@+id/bAddTiming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_1"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:text="ADD"
+        android:layout_below="@id/etTimings"
+        android:layout_toRightOf="@id/etTimings"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/bConfirmAdd"
+        android:layout_width="149dp"
+        android:layout_height="41dp"
+        android:background="@drawable/button_design_1"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:layout_below="@id/etReason"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Confirm" />
+
+    <TextView
+        android:id="@+id/tvEgDateHyphen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:text="Eg. 14-07-2019"
+        android:textColor="#010b13"
+        android:textSize="15dp"
+        android:layout_below="@id/etScheduleDate"
+        app:fontFamily="@font/andada"
+         />
+
+    <TextView
+        android:id="@+id/tvEgTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eg (24Hr Clock). 10-14"
+        android:textColor="#010b13"
+        android:textSize="15dp"
+        app:fontFamily="@font/andada"
+        android:layout_marginLeft="85dp"
+        android:layout_below="@id/etTimings"/>
+</RelativeLayout>

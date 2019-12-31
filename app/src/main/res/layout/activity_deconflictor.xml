@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/woodbackground"
+    tools:context=".Deconflictor">
+
+    <EditText
+        android:id="@+id/etOrganiser"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/tvOrganiser"
+        android:layout_marginTop="30dp"
+        android:textColor="#010b13"
+        android:ems="10"
+        android:hint="dd/mm/yyyy-dd/mm/yyyy"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/etUnavailability"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:textColor="#010b13"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="dd/mm/yyyy:hh-hh or dd/mm/yyyy"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvOrganiser"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Organiser's List of Dates"
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tvOrganiser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:text="Member's Unavailability"
+        android:textAlignment="center"
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black" />
+
+    <Button
+        android:id="@+id/bAdd"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button_design_1"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:layout_marginTop="20dp"
+        android:text="ADD"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvEgUnavilable"
+        android:layout_marginLeft="10dp"
+ />
+
+    <Button
+        android:id="@+id/bCalculate"
+        android:layout_width="253dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button_design_1"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:layout_below="@id/bAdd"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Deconflict Now"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/bReset"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/bCalculate"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_design_1"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:layout_marginTop="20dp"
+        android:text="Reset"
+        android:textSize="20dp"
+/>
+
+    <TextView
+        android:id="@+id/tvTextCount"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvEgUnavilable"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/bAdd"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="Count:"
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="20dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvEgUnavilable"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tvTextCount"
+        android:gravity="center"
+        android:text="0"
+        android:layout_marginTop="20dp"
+        android:textColor="#010b13"
+        android:textSize="22dp"
+        app:fontFamily="@font/alegreya_sc_black" />
+
+    <TextView
+        android:id="@+id/tvEgDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etOrganiser"
+        android:layout_centerHorizontal="true"
+        android:text="Eg. 14/07/2019-19/07/2019"
+        android:textColor="#010b13"
+        android:textSize="17dp"
+        app:fontFamily="@font/andada" />
+
+    <TextView
+        android:id="@+id/tvEgUnavilable"
+        android:layout_below="@id/etUnavailability"
+        android:text="Eg. 14/07/2019:09-14 or Eg. 14/07/2019"
+        android:textColor="#010b13"
+        android:textSize="17dp"
+        app:fontFamily="@font/andada"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

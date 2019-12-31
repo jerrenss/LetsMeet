@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CLDatabase"
+    android:background="@drawable/greybackgroud">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="171dp"
+        android:layout_height="212dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/fakeprofile" />
+
+    <TextView
+    android:id="@+id/tvNameCL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imageView"
+    android:text="Name: "
+    android:textColor="#010b13"
+    android:textSize="20dp"
+    app:fontFamily="@font/alegreya_sc_black"
+    android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:id="@+id/tvNameCLFake"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/imageView"
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black"
+        android:layout_toRightOf="@id/tvNameCL"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Ong Beng Seng Jacky" />
+
+    <TextView
+        android:id="@+id/tvAgeCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNameCL"
+        android:text="Age: "
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:id="@+id/tvContactCL"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tvAgeCL"
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black"
+        android:layout_marginLeft="60dp"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:" />
+
+    <TextView
+        android:id="@+id/tvPostalCodeCL"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tvContactCL"
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black"
+        android:layout_marginLeft="60dp"
+        android:layout_height="wrap_content"
+        android:text="Postal Code:" />
+
+    <TextView
+        android:id="@+id/tvNull1CL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvAgeCL"
+        android:layout_below="@id/tvNameCLFake"
+        android:text="... ..."
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tvNull12CL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvContactCL"
+        android:layout_below="@id/tvNull1CL"
+        android:text="... ..."
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tvPostalCodeFakeCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvPostalCodeCL"
+        android:layout_below="@id/tvNull12CL"
+        android:text="570268"
+        android:textColor="#010b13"
+        android:textSize="20dp"
+        app:fontFamily="@font/alegreya_sc_black"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/bSESCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predict SES"
+        android:background="@drawable/button_design_2"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:layout_below="@id/tvPostalCodeCL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
